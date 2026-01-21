@@ -110,4 +110,15 @@ function login() {
     </div>
 
 </body>
-</html>
+</html><script>
+// دالة لإظهار رسالة عند الضغط على الأزرار
+function showAction(type) {
+    let message = "";
+    if(type === 'deposit') message = "جارٍ تحويلك إلى بوابة الشحن...";
+    if(type === 'withdraw') message = "عذراً، يجب أن يكون رصيدك 2000 DZD على الأقل للسحب.";
+    
+    // إظهار تنبيه بسيط للمستخدم
+    alert(message);
+}
+</script>
+
