@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+​<button onclick="window.location.href='dashboard.html'">دخول</button>!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
