@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - منصة التبادل</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f7f6; margin: 0; padding: 0; }
+        
+        /* قسم الرصيد العلوي */
+        .balance-card { background: white; margin: 15px; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        .balance-label { color: #666; font-size: 14px; }
+        .balance-amount { font-size: 28px; font-weight: bold; color: #0052cc; margin: 10px 0; }
+        
+        /* شبكة الأيقونات (شحن، سحب، خدمة) */
+        .actions-grid { display: flex; justify-content: space-around; margin: 20px 0; }
+        .action-item { text-align: center; font-size: 13px; }
+        .icon-box { width: 50px; height: 50px; background: #eef2ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 5px; font-size: 20px; }
+
+        /* شريط التنقل السفلي */
+        .bottom-nav { position: fixed; bottom: 0; width: 100%; background: white; display: flex; justify-content: space-around; padding: 10px 0; border-top: 1px solid #ddd; }
+        .nav-item { text-align: center; font-size: 12px; color: #888; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="balance-card">
+        <div class="balance-label">رصيد الحساب</div>
+        <div class="balance-amount">DZD 510,00</div>
+        
+        <div class="actions-grid">
+            <div class="action-item"><div class="icon-box">💰</div>شحن</div>
+            <div class="action-item"><div class="icon-box">💳</div>سحب</div>
+            <div class="action-item"><div class="icon-box">🎧</div>خدمة العملاء</div>
+        </div>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item">🏠<br>الرئيسية</a>
+        <a href="#" class="nav-item">⚙️<br>المعدات</a>
+        <a href="#" class="nav-item">👥<br>دعوة</a>
+        <a href="#" class="nav-item">👤<br>حسابي</a>
+    </nav>
+
+</body>
+</html>
