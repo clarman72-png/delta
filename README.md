@@ -1,4 +1,26 @@
-<input type="text" id="usernameInput" placeholder="اسم المستخدم">
+<div class="bg-blue-50 text-blue-600 text-xs py-2 overflow-hidden whitespace-nowrap border-b border-blue-100">
+    <div class="animate-marquee inline-block">
+        📢 قام المستخدم (Ahmed***) بسحب 4500 DZD بنجاح ... قام المستخدم (Sara***) بسحب 1200 DZD بنجاح ...
+    </div>
+</div>
+<div class="p-4">
+    <img src="https://www.unitree.com/images/go2/go2_01.jpg" alt="Unitree Go2" class="w-full h-48 object-cover rounded-3xl shadow-lg">
+</div>
+
+<style>
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+.<div class="p-4">
+    <img src="https://www.unitree.com/images/go2/go2_01.jpg" alt="Unitree Go2" class="w-full h-48 object-cover rounded-3xl shadow-lg">
+</div>
+-marquee {
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+}
+</style>
+input type="text" id="usernameInput" placeholder="اسم المستخدم">
 
 <button onclick="login()">دخول</button>
 
