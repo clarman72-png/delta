@@ -1,4 +1,25 @@
-​<button onclick="window.location.href='dashboard.html'">دخول</button>!DOCTYPE html>
+<input type="text" id="usernameInput" placeholder="اسم المستخدم">
+
+<button onclick="login()">دخول</button>
+
+<script>
+function login() {
+    // 1. الحصول على الاسم من الحقل
+    var name = document.getElementById("usernameInput").value;
+    
+    if (name === "") {
+        alert("يرجى إدخال اسم المستخدم");
+        return;
+    }
+
+    // 2. حفظ الاسم في ذاكرة المتصفح
+    localStorage.setItem("user_name", name);
+    
+    // 3. الانتقال إلى لوحة التحكم
+    window.location.href = "dashboard.html";
+}
+</script>
+<button onclick="window.location.href='dashboard.html'">دخول</button>!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
