@@ -2,7 +2,19 @@
 
 <button onclick="login()">دخول</button>
 
-<script>
+<script>// وظيفة استلام المكافأة
+function claimReward() {
+    alert("تم استلام مكافأة التسجيل اليومية بنجاح! +10 DZD");
+    // هنا يمكنك مستقبلاً ربط الكود لتحديث الرصيد في قاعدة البيانات
+}
+
+// وظيفة استئجار المعدات
+function rentMachine(name, price) {
+    if(confirm("هل تريد تأجير " + name + " مقابل " + price + " DZD؟")) {
+        alert("عذراً، رصيدك الحالي غير كافٍ. يرجى شحن الحساب أولاً.");
+    }
+}
+
 function login() {
     // 1. الحصول على الاسم من الحقل
     var name = document.getElementById("usernameInput").value;
@@ -108,6 +120,36 @@ function login() {
             <span class="text-[10px] font-bold">حسابي</span>
         </div>
     </div>
+<div class="grid grid-cols-2 gap-4 p-4">
+    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 text-center">
+        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2 text-2xl">🎁</div>
+        <h4 class="text-sm font-bold text-gray-800">مكافأة التسجيل</h4>
+        <p class="text-xs text-blue-600 font-bold mt-1">DZD 10.00</p>
+        <button class="bg-blue-600 text-white text-xs px-4 py-1 rounded-full mt-2">استلام</button>
+    </div>
+
+    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 text-center">
+        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2 text-2xl">📦</div>
+        <h4 class="text-sm font-bold text-gray-800">علبة الهدايا</h4>
+        <p class="text-xs text-gray-400 mt-1">أدخل الكود</p>
+        <button class="bg-gray-100 text-gray-600 text-xs px-4 py-1 rounded-full mt-2">فتح</button>
+    </div>
+</div>
+
+<div class="px-4 mb-20">
+    <h3 class="font-bold text-gray-800 mb-3">المعدات الذكية المتوفرة</h3>
+    <div class="bg-white p-3 rounded-2xl shadow-sm flex items-center gap-4 border border-gray-100">
+        <img src="https://via.placeholder.com/80" class="rounded-xl bg-gray-50" alt="Robot">
+        <div class="flex-1">
+            <h4 class="text-sm font-bold">روبوت الفئة الأولى (G1)</h4>
+            <p class="text-xs text-gray-500">الدخل اليومي: DZD 150</p>
+            <div class="flex justify-between items-center mt-2">
+                <span class="text-blue-600 font-bold text-sm">DZD 2,000</span>
+                <button class="bg-blue-600 text-white text-xs px-4 py-1 rounded-lg">إيجار</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html><script>
